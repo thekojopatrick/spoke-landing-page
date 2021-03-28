@@ -25,54 +25,69 @@
 
 .Nav {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.NavbarContainer {
-  width: 100%;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
 .Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+  margin: 0 auto;
 }
-
-/* flex flex-col md:flex-row md:mx-6 */
 
 .NavLinks {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-right: 2px solid rgba(238, 238, 238, 1);
+  /* margin-right: 0.75rem; */
+  margin-left: auto;
 }
 
 .NavLink {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-right: 1.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-weight: 500;
-  color: rgba(55, 65, 81, 1);
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  transition: font-weight 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.NavLink:active {
+  font-weight: 600;
+}
+
+.NavLink:focus {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+
+.NavLink:hover {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+
+.Logo {
+  height: 48px;
 }
 
 .LoginButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  width: 70px;
+  height: 48px;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: rgba(59, 130, 246, 1);
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(31, 54, 246, 1);
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 0px 16px;
   cursor: pointer;
 }
 
@@ -82,16 +97,18 @@
 }
 
 .RegisterButton {
+  display: flex;
+  height: 48px;
+  width: 152px;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: rgba(59, 130, 246, 1);
-  border-width: 1px;
-  border-radius: .5rem;
-  border-color: rgba(96, 165, 250, 1);
+  color: rgba(31, 54, 246, 1);
+  border: 1px solid #1F36F6;
   background-color: #fff;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .RegisterButton:focus {
@@ -100,7 +117,8 @@
 
 .RegisterButton:Hover {
   color: #fff;
-  background-color: rgba(96, 165, 250, 1);
+  background-color: rgba(31, 54, 246, 1);
+  border: none;
 }
 
 .container {
@@ -165,5 +183,3 @@
     max-width: 1536px;
   }
 }
-
-
