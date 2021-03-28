@@ -1,0 +1,169 @@
+:root {
+  --tw-bg-opacity: 1;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.Flex {
+  display: flex;
+}
+
+.ItemsCenter {
+  align-items: center;
+}
+
+.JustifyCenter {
+  justify-content: space-center;
+}
+
+.Block {
+  display: block;
+}
+
+.Hidden {
+  display: none;
+}
+
+.Nav {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.NavbarContainer {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* flex flex-col md:flex-row md:mx-6 */
+
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavLink {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: rgba(55, 65, 81, 1);
+}
+
+.LoginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(59, 130, 246, 1);
+  cursor: pointer;
+}
+
+.LoginButton:hover {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.RegisterButton {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(59, 130, 246, 1);
+  border-width: 1px;
+  border-radius: .5rem;
+  border-color: rgba(96, 165, 250, 1);
+  background-color: #fff;
+}
+
+.RegisterButton:focus {
+  outline: none;
+}
+
+.RegisterButton:Hover {
+  color: #fff;
+  background-color: rgba(96, 165, 250, 1);
+}
+
+.container {
+  width: 100%;
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+
