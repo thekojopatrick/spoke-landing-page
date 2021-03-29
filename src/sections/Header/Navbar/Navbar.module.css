@@ -24,6 +24,8 @@
 }
 
 .Nav {
+  width: 90%;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
