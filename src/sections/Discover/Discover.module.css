@@ -1,0 +1,52 @@
+.Card {
+  width: 192px;
+  height: 80px;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+}
+
+.Discover {
+  text-align: center;
+}
+
+.DiscoverContainer {
+  width: 90%;
+  padding: 4rem 1.5rem;
+  margin: 0 auto;
+}
+
+/* 'flex flex-wrap w-full mb-20 flex-col items-center text-center'  */
+
+.DiscoverContentBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 'flex flex-wrap m-4 space-x-2'  */
+
+.Space> :not([hidden])~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.Title {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  color: #000001;
+}
+
+/* 'sm:text-3xl text-2xl font-medium title-font mb-12 text-gray-900' */
