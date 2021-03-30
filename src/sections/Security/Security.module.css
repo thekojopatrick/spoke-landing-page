@@ -1,0 +1,71 @@
+.Flex {
+  display: flex;
+}
+
+.ItemsCenter {
+  align-items: center;
+}
+
+.JustifyCenter {
+  justify-content: center;
+}
+
+.MarginLeft {
+  margin-left: 1rem;
+}
+
+.Security {
+  text-align: center;
+  color: #000000;
+}
+
+/* container mx-auto flex px-5 py-24 items-center justify-center flex-col */
+
+.SecurityContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+.SecurityImage {
+  object-fit: cover;
+  object-position: center;
+  /* margin-bottom: 3rem; */
+}
+
+/* text-center lg:w-2/3 w-full' */
+
+.SecurityContentBox {
+  text-align: center;
+}
+
+/* sm:text-4xl text-6xl mb-4 font-bold text-gray-900 leading-loose' */
+
+.Title {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  color: #000000;
+  margin: 24px 0px;
+}
+
+.Body {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  margin: 24px 0px;
+}
+
+/* flex justify-center */
+
+.Brand {
+  display: inline-flex;
+  object-fit: cover;
+  object-position: center;
+}
