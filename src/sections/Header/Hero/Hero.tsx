@@ -1,7 +1,5 @@
 import classes from './Hero.module.css';
-import HeroImage from '../../../assets/Media/illustrations/HeroImage.svg';
-
-
+import Heroillustrations from '../../../assets/Media/images/Heroillustrations.svg';
 
 export default function Hero() {
 	return (
@@ -22,7 +20,7 @@ export default function Hero() {
 				</div>
 
 				<div className={classes.RightHeroBox}>
-					<img className={classes.HeroImage} src={HeroImage} alt='' />
+					<img className={classes.HeroImage} src={Heroillustrations} alt='' />
 				</div>
 			</div>
 		</div>
