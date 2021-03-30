@@ -1,0 +1,15 @@
+.FlagBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: #151515;
+  border-radius: 8px;
+}
+
+.Flag {
+  object-fit: cover;
+  object-position: center;
+}

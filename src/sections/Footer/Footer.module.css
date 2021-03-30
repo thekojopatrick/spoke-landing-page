@@ -1,0 +1,124 @@
+.Flex {
+  display: flex;
+}
+
+.Relative {
+  position: relative;
+}
+
+.Absolute {
+  position: absolute;
+}
+
+.ItemsCenter {
+  align-items: center;
+}
+
+.JustifyCenter {
+  justify-content: space-center;
+}
+
+.Footer {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+/* 'container px-5 py-32 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-between' */
+
+.FooterContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.FooterText {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #888888;
+  margin-top: 8px;
+}
+
+.FlagsContainer {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* 
+flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first justify-between */
+
+.FooterOrderFirst {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+  flex-grow: 1;
+  order: -9999;
+}
+
+/* 'flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10' */
+
+.FooterOrderLast {
+  flex-shrink: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* lg:w-1/4 md:w-1/2 w-full px-4' */
+
+.FooterColumns {
+  width: 25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.FooterNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  list-style-type: none;
+  margin-top: calc(0.5rem * calc(1 - 0));
+  margin-bottom: calc(0.5rem * 0);
+}
+
+.FooterNavLinks {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 10px 0px;
+}
+
+.FooterNavLinks:hover {
+  color: rgba(31, 41, 55, 1);
+}
+
+.Footnote {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #EEEEEE;
+  margin: 10px 0px;
+}
+
+.CompanyDescription {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #888888;
+}
