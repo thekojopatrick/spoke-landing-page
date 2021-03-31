@@ -88,4 +88,5 @@
 
 .BookDemoArrows{
  margin-right: 300px;
+ animation: var(--animate-bounce);
 }
