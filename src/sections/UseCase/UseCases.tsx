@@ -11,17 +11,23 @@ import illustration2 from '../../assets/Media/illustrations/RedCard.svg';
 import Person3 from '../../assets/Media/images/person3.png';
 import illustration3 from '../../assets/Media/illustrations/PurpleCard.svg';
 
-const SquareIcon: CSS.Properties = {
-	width: '8px',
-	height: '8px',
-	backgroundColor: '#07DCA9',
-	marginRight: '4px',
+
+const SquareRed: CSS.Properties = {
+	backgroundColor: '#FE1B4E',
+};
+
+const SquarePurple: CSS.Properties = {
+	backgroundColor: '#9D04FF',
+};
+
+const SquareGreen: CSS.Properties = {
+	backgroundColor: ' #07DCA9',
 };
 
 export default function UseCases() {
 	return (
 		<section>
-			<div className={[classes.Container,classes.Spaces].join(' ')}>
+			<div className={[classes.Container, classes.Spaces].join(' ')}>
 				<div className={classes.UseCaseContainer}>
 					<Testimonial
 						personPicture={Person1}
@@ -33,7 +39,7 @@ export default function UseCases() {
 						buttonName={'Summarize your UX & Qualitative Research'}
 					>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquareGreen} className={classes.SquareIcon}></span>
 							<p>
 								Gain time: directly mark moments of interest
 								<span className={classes.Italic}>
@@ -43,11 +49,11 @@ export default function UseCases() {
 							</p>
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquareGreen} className={classes.SquareIcon}></span>
 							Perfect transcription
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquareGreen} className={classes.SquareIcon}></span>
 							Never forget anything
 						</li>
 					</UseCase>
@@ -64,15 +70,15 @@ export default function UseCases() {
 						buttonName={'Summarize your Customer Success'}
 					>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquareRed} className={classes.SquareIcon}></span>
 							<p>Playing around with your information</p>
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquareRed} className={classes.SquareIcon}></span>
 							Create fun videos
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquareRed} className={classes.SquareIcon}></span>
 							Remix your video-conferences
 						</li>
 					</UseCase>
@@ -89,21 +95,21 @@ export default function UseCases() {
 						buttonName={'Summarize your Internal Communication'}
 					>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquarePurple} className={classes.SquareIcon}></span>
 							<p>Stop repeating yourself : archive and save it for ever.</p>
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquarePurple} className={classes.SquareIcon}></span>
 							Collectif : You’re gonna lose time by editing your videos, but
 							everyone in your company will benefit.
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquarePurple} className={classes.SquareIcon}></span>
 							Cut the bullshit : 80% of the information in a video-conference
 							does NOT matter
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareIcon}></span>
+							<span style={SquarePurple} className={classes.SquareIcon}></span>
 							Knowledge: Personal library of all your video-conversations.
 						</li>
 					</UseCase>
