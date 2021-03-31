@@ -1,5 +1,6 @@
 .Flex {
   display: flex;
+  flex-direction: column;
 }
 
 .Relative {
@@ -19,7 +20,7 @@
 }
 
 .HeroContainer {
-  width: 90%;
+  width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: 1rem auto;
@@ -27,30 +28,26 @@
   animation: var(--animate-refresh);
 }
 
-/* min-w-lg w-full md:w-1/2 */
-
 .LeftHeroBox {
-  /* min-width: 100%; */
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .HeroText {
   font-family: Source Sans Pro, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 36px;
+  line-height: 40px;
   color: rgba(0, 0, 0, 1);
   width: 100%;
   margin-bottom: 2rem;
 }
 
-/*mt-2 text-gray-600 dark:text-gray-400 leading-loose w-9/12 mb-12*/
-
 .HeroParagraph {
   font-weight: normal;
-  width: 80%;
-  margin: 24px 0px;
+  width: 100%;
+  margin: 24px auto;
   font-size: 16px;
   line-height: 32px;
   color: #000000;
@@ -60,8 +57,6 @@
   background-color: #FFDF80;
   height: 64px;
 }
-
-/*w-1/2 px-3 py-4 mt-4 text-sm font-medium text-white uppercase bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-50*/
 
 .CTAButton {
   height: 64px;
@@ -81,17 +76,126 @@
   background: #051adf;
 }
 
-/*'flex items-center justify-center w-full mt-6 md:mt-0 md:w-1/2'*/
+.CTAButton:hover {
+  background: #051adf;
+}
 
 .RightHeroBox {
   display: flex;
+  order: -9999;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
-
-/*w-full h-full max-w-2xl*/
 
 .HeroImage {
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .Flex {
+    flex-direction: row;
+  }
+  .LeftHeroBox {
+    width: 50%;
+    text-align: left;
+  }
+  .RightHeroBox {
+    width: 50%;
+    order: 9999;
+  }
+  .HeroContainer {
+    max-width: 640px;
+  }
+  .HeroText {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Flex {
+    flex-direction: row;
+  }
+  .HeroContainer {
+    max-width: 768px;
+  }
+  .LeftHeroBox {
+    width: 50%;
+    order: 0;
+    text-align: left;
+  }
+  .RightHeroBox {
+    width: 50%;
+    order: 9999;
+  }
+  .HeroText {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .HeroContainer {
+    max-width: 1024px;
+  }
+  .LeftHeroBox {
+    width: 50%;
+    order: 0;
+    text-align: left;
+  }
+  .RightHeroBox {
+    width: 50%;
+    order: 9999;
+  }
+  .HeroText {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .HeroContainer {
+    max-width: 1280px;
+  }
+  .LeftHeroBox {
+    width: 50%;
+    order: 0;
+    text-align: left;
+  }
+  .RightHeroBox {
+    width: 50%;
+    order: 9999;
+  }
+  .HeroText {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .HeroParagraph {
+    width: 80%;
+    margin: 24px 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .HeroContainer {
+    max-width: 1536px;
+  }
+  .LeftHeroBox {
+    width: 50%;
+    order: 0;
+    text-align: left;
+  }
+  .RightHeroBox {
+    width: 50%;
+    order: 9999;
+  }
+  .HeroText {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .HeroParagraph {
+    width: 80%;
+    margin: 24px 0px;
+  }
 }
