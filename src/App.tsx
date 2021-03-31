@@ -9,6 +9,7 @@ import TryDemo from './sections/Demo/TryDemo';
 import DiscoverWhy from './sections/Discover/Discover';
 import UseCases from './sections/UseCase/UseCases';
 import WhySpoke from './sections/WhySpoke/WhySpoke';
+import Pricing from './sections/Pricing/Pricing';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <DiscoverWhy/>
       <UseCases/>
       <WhySpoke/>
+      <Pricing/>
       <Security/>
       <BookDemo/>
       <Footer/>
