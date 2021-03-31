@@ -26,7 +26,7 @@ const SquareGreen: CSS.Properties = {
 
 export default function UseCases() {
 	return (
-		<section>
+		<section id='use-cases'>
 			<div className={[classes.Container, classes.Spaces].join(' ')}>
 				<div className={classes.UseCaseContainer}>
 					<Testimonial

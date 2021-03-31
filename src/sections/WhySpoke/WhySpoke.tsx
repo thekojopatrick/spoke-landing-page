@@ -7,7 +7,7 @@ import OurIntegration from './OurIntegration/OurIntergration';
 
 export default function WhySpoke() {
 	return (
-		<section>
+		<section id='why-spoke'>
 			<div className={classes.WhySpokeContainer}>
 				<div className={classes.ColumnLeft}>
 					<OurIntegration />

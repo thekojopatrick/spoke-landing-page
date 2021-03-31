@@ -6,7 +6,7 @@ import Google from '../../assets/Media/images/google.png';
 
 export default function Security() {
 	return (
-		<section className={classes.Security}>
+		<section className={classes.Security} id='privacy'>
 			<div className={classes.SecurityContainer}>
 				<img className={classes.SecurityImage} alt='hero' src={Lock} />
 				<div className={classes.SecurityImage}>

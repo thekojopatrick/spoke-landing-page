@@ -4,7 +4,7 @@ import arrows from '../../assets/Media/images/arrows.png'
 
 export default function BookDemo() {
 	return (
-		<div className={classes.BookDemoBackground}>
+		<div className={classes.BookDemoBackground} id='contact-us'>
 			<div
 				className={[
 					classes.Flex,

@@ -7,7 +7,7 @@ export const Navbar = () => {
 		<div className={classes.Nav}>
 			<div className={classes.Navbar}>
 				<a
-					href='./index.html'
+					href='/'
 					className='pr-2 lg:pr-8 lg:px-6 focus:outline-none'
 				>
 					<div className='inline-flex items-center'>
@@ -16,37 +16,37 @@ export const Navbar = () => {
 				</a>
 				<nav className={classes.NavLinks}>
 					<a
-						href='#'
+						href='#how-it-works'
 						className={classes.NavLink}
 					>
 						How it works
 					</a>
 					<a
-						href='#'
+						href='#our-clients'
 						className={classes.NavLink}
 					>
 						Our Clients
 					</a>
 					<a
-						href='/'
+						href='#use-cases'
 						className={classes.NavLink}
 					>
 						Use cases
 					</a>
 					<a
-						href='/'
+						href='#why-spoke'
 						className={classes.NavLink}
 					>
 						Why Spoke
 					</a>
 					<a
-						href='/'
+						href='#privacy'
 						className={classes.NavLink}
 					>
 						Privacy
 					</a>
 					<a
-						href='/'
+						href='#contact-us'
 						className={classes.NavLink}
 					>
 						Contact

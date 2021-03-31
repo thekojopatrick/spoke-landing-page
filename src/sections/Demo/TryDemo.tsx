@@ -3,7 +3,7 @@ import ArrowDown from '../../assets/Media/images/arrow-down.png';
 
 export default function TryDemo() {
 	return (
-		<section className={classes.Background}>
+		<section className={classes.Background} id='how-it-works'>
 			<div className={classes.Container}>
 				<div className={classes.TopContentBox}>
 					<div className={classes.HeadlineContainer}>
