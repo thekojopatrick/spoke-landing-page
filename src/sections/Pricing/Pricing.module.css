@@ -13,7 +13,7 @@
 .Container {
   width: 90%;
   padding: 4rem 1.5rem;
-  margin: 0 auto;
+  margin: 8rem auto;
 }
 
 .Title {
@@ -120,7 +120,7 @@
   transition: all 0.2s ease-in;
 }
 
-.FormSwitchCheckbox:checked+.FormSwitchLabel, .FormSwitchCheckbox:checked+.FormSwitchLabel:before {}
+/* .FormSwitchCheckbox:checked+.FormSwitchLabel, .FormSwitchCheckbox:checked+.FormSwitchLabel:before {} */
 
 .FormSwitchCheckbox:checked+.FormSwitchLabel {
   --tw-shadow: 0 0 #0000;
