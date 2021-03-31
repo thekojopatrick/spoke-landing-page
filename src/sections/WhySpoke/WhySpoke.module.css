@@ -1,0 +1,103 @@
+.Flex {
+  display: flex;
+}
+
+.ItemsCenter {
+  align-items: center;
+}
+
+.FlexGrow {
+  flex-grow: 1;
+}
+
+.PaddingLeft {
+  padding-left: 1rem;
+}
+
+.MarginBottom {
+  margin-bottom: 56px;
+}
+
+/* 'container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-around' */
+
+.WhySpokeContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 1.5rem;
+}
+
+/* lg:w-1/2 md:w-1/2 w-5/6 mb-10 mr-28 md:mb-0' */
+
+.ColumnLeft {
+  width: 50%;
+}
+
+/* 'lg:w-1/2 md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center' */
+
+.ColumnRight {
+  /* max-width: 64rem; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px 64px 64px;
+  background: #07DCA9;
+  border-radius: 16px;
+}
+
+.Title {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  color: #000000;
+  margin: 48px 0px;
+}
+
+.ContentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.SubTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.Body {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 4px 0px;
+}
+
+.Spaces> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - 0));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+/* 'w-full text-black bg-white border-0 py-4 px-6 focus:outline-none hover:bg-gray-50 rounded text-lg' */
+
+.SignUpButton {
+  width: 100%;
+  padding: 16px 32px;
+  height: 64px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}

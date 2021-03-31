@@ -1,0 +1,16 @@
+.Title {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  color: #000000;
+  margin: 48px 0px;
+}
+
+.BrandsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .5rem;
+  margin-top: 1rem;
+}

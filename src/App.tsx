@@ -8,6 +8,7 @@ import Security from './sections/Security/Security';
 import TryDemo from './sections/Demo/TryDemo';
 import DiscoverWhy from './sections/Discover/Discover';
 import UseCases from './sections/UseCase/UseCases';
+import WhySpoke from './sections/WhySpoke/WhySpoke';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <TryDemo/>
       <DiscoverWhy/>
       <UseCases/>
+      <WhySpoke/>
       <Security/>
       <BookDemo/>
       <Footer/>
