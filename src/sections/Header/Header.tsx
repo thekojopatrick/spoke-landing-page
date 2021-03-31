@@ -1,12 +1,11 @@
 import Hero from './Hero/Hero';
-import TestNavbar from './Navbar/TestNavbar';
-// import { Navbar } from './Navbar/TestNavbar';
+import { Navbar } from './Navbar/Navbar';
 
 export const Header = () => {
 	return (
 		<header>
-			<TestNavbar />
-			{/* <Hero/> */}
+			<Navbar />
+			<Hero/>
 		</header>
 	);
 };

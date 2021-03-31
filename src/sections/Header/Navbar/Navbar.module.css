@@ -24,7 +24,7 @@
 }
 
 .Nav {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(17, 24, 39, var(--tw-text-opacity));
@@ -39,21 +39,53 @@
   margin: 0 auto;
 }
 
+.HamburgerMenu {
+  display: block;
+}
+
+.HamburgerMenuButton {
+  background-color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.HamburgerMenuButton:focus {
+  outline: none;
+}
+
+.NavLinkGroup {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.NavButtonsGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .NavLinks {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-right: 2px solid rgba(238, 238, 238, 1);
-  /* margin-right: 0.75rem; */
-  margin-left: auto;
+  border-right: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .NavLink {
-  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
@@ -76,7 +108,7 @@
 }
 
 .Logo {
-  height: 48px;
+  height: 2rem;
 }
 
 .LoginButton {
@@ -127,61 +159,125 @@
   width: 100%;
 }
 
-.transition {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.transform {
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 @media (min-width: 640px) {
-  .container {
+  .Nav {
     max-width: 640px;
+  }
+  .HamburgerMenu {
+    display: hidden;
+  }
+  .NavLinkGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .NavLinks {
+    flex-direction: row;
+    border-right: 2px solid rgba(238, 238, 238, 1);
+    margin-left: auto;
+  }
+  .NavLink {
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .Logo {
+    height: 48px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .Nav {
     max-width: 768px;
+  }
+  .HamburgerMenu {
+    display: none;
+  }
+  .NavLinkGroup {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .NavLink {
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .NavButtonsGroup {
+    flex-direction: row;
+  }
+  .Logo {
+    height: 48px;
   }
 }
 
 @media (min-width: 1024px) {
-  .container {
+  .Nav {
     max-width: 1024px;
+  }
+  .HamburgerMenu {
+    display: none;
+  }
+  .NavLinkGroup {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .NavLink {
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .NavButtonsGroup {
+    flex-direction: row;
+  }
+  .Logo {
+    height: 48px;
   }
 }
 
 @media (min-width: 1280px) {
-  .container {
+  .Nav {
     max-width: 1280px;
+  }
+  .HamburgerMenu {
+    display: none;
+  }
+  .NavLinkGroup {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .NavLink {
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .NavButtonsGroup {
+    flex-direction: row;
+  }
+  .Logo {
+    height: 48px;
   }
 }
 
 @media (min-width: 1536px) {
-  .container {
+  .Nav {
     max-width: 1536px;
+  }
+  .HamburgerMenu {
+    display: none;
+  }
+  .NavLinkGroup {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .NavLink {
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .NavButtonsGroup {
+    flex-direction: row;
+  }
+  .Logo {
+    height: 48px;
   }
 }
