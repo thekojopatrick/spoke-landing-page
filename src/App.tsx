@@ -11,22 +11,6 @@ import WhySpoke from './sections/WhySpoke/WhySpoke';
 import Pricing from './sections/Pricing/Pricing';
 
 function App() {
-	// const [animate, setAnimate] = useState(false);
-
-	// if (typeof window !== 'undefined') {
-	// 	// browser code
-	// 	const animateSection = () => {
-	// 		if (
-	// 			window.pageYOffset /
-	// 			(document.body.offsetHeight - window.innerHeight)
-	// 		) {
-	// 			setAnimate(true);
-	// 		} else {
-	// 			setAnimate(false);
-	// 		}
-	// 	};
-	// 	window.addEventListener('scroll', animateSection);
-	// }
 
 	return (
 		<div className='App'>
