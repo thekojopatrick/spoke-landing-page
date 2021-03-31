@@ -17,7 +17,7 @@ function App() {
       <DiscoverWhy/>
       <Security/>
       <BookDemo/>
-      <Footer/>
+      <Footer/> 
     </Layout>
     </div>
   );
