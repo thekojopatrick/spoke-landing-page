@@ -1,4 +1,3 @@
-import React from 'react';
 import './styles/App.css';
 import Layout from './components/Layout/Layout';
 import { Header } from './sections/Header/Header';
@@ -12,21 +11,38 @@ import WhySpoke from './sections/WhySpoke/WhySpoke';
 import Pricing from './sections/Pricing/Pricing';
 
 function App() {
-  return (
-    <div className="App">
-    <Layout>
-      <Header/>
-      <TryDemo/>
-      <DiscoverWhy/>
-      <UseCases/>
-      <WhySpoke/>
-      <Pricing/>
-      <Security/>
-      <BookDemo/>
-      <Footer/>
-    </Layout>
-    </div>
-  );
+	// const [animate, setAnimate] = useState(false);
+
+	// if (typeof window !== 'undefined') {
+	// 	// browser code
+	// 	const animateSection = () => {
+	// 		if (
+	// 			window.pageYOffset /
+	// 			(document.body.offsetHeight - window.innerHeight)
+	// 		) {
+	// 			setAnimate(true);
+	// 		} else {
+	// 			setAnimate(false);
+	// 		}
+	// 	};
+	// 	window.addEventListener('scroll', animateSection);
+	// }
+
+	return (
+		<div className='App'>
+			<Layout>
+				<Header />
+				<TryDemo />
+				<DiscoverWhy />
+				<UseCases />
+				<WhySpoke />
+				<Pricing />
+				<Security />
+				<BookDemo />
+				<Footer />
+			</Layout>
+		</div>
+	);
 }
 
 export default App;

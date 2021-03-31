@@ -73,7 +73,7 @@
 
 .BookDemoButton {
   padding: 16px 32px;
-  width: 271px;
+  /* width: 271px; */
   height: 64px;
   background: #000000;
   font-weight: normal;

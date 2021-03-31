@@ -23,6 +23,8 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: 1rem auto;
+  opacity: 0;
+  animation: var(--animate-refresh);
 }
 
 /* min-w-lg w-full md:w-1/2 */
@@ -62,7 +64,6 @@
 /*w-1/2 px-3 py-4 mt-4 text-sm font-medium text-white uppercase bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-50*/
 
 .CTAButton {
-  width: 263px;
   height: 64px;
   padding: 16px 32px;
   background: #1F36F6;
