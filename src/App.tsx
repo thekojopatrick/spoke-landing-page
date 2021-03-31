@@ -19,7 +19,7 @@ function App() {
       <UseCases/>
       <Security/>
       <BookDemo/>
-      <Footer/>
+      <Footer/> 
     </Layout>
     </div>
   );
