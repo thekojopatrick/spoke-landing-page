@@ -56,4 +56,6 @@
   border: none;
   cursor: pointer;
   margin-top: 3rem;
+  transition: var(--animate-button);
 }
+

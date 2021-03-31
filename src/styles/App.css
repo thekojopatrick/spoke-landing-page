@@ -2,6 +2,7 @@
   --animate-bounce: Bounce 1s infinite;
   --animate-refresh: Refresh 3s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s forwards;
   --animate-pulse: Pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-button:background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .Hero {
@@ -49,7 +50,7 @@
   }
 }
 
- @keyframes Pulse {
+@keyframes Pulse {
   0%, 100% {
     opacity: 1;
   }

@@ -74,6 +74,11 @@
   color: #FFFFFF;
   cursor: pointer;
   border: none;
+  transition: var(--animate-button);
+}
+
+.CTAButton:hover {
+  background: #051adf;
 }
 
 /*'flex items-center justify-center w-full mt-6 md:mt-0 md:w-1/2'*/

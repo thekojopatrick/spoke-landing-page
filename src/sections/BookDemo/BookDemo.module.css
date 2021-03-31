@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.MarginBottom{
+.MarginBottom {
   margin-bottom: 8rem;
 }
 
@@ -75,7 +75,7 @@
   padding: 16px 32px;
   /* width: 271px; */
   height: 64px;
-  background: #000000;
+  background: #0a0a0a;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
@@ -84,9 +84,14 @@
   margin: 10px 0px;
   border: none;
   cursor: pointer;
+  transition: var(--animate-button);
 }
 
-.BookDemoArrows{
- margin-right: 300px;
- animation: var(--animate-bounce);
+.BookDemoButton:hover {
+  background: #000000;
+}
+
+.BookDemoArrows {
+  margin-right: 300px;
+  animation: var(--animate-bounce);
 }
