@@ -1,16 +1,20 @@
-.FeatureLists {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-  list-style-position: inside;
+.Container {
+  width: 90%;
+  padding: 4rem 1.5rem;
+  margin: 0 auto;
 }
 
-.Spaces> :not([hidden])~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - 0));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+.Italic {
+  font-style: italic;
+}
+
+/* 'lg:w-4/5 mx-auto flex flex-wrap items-center justify-between' */
+
+.UseCaseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* 'mb-4 inline-flex items-center justify-center text-black text-base' */
@@ -22,4 +26,10 @@
   color: #000000;
   font-size: 16px;
   line-height: 32px;
+}
+
+.Spaces> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - 0));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }

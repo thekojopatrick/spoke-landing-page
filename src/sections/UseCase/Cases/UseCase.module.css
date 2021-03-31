@@ -27,6 +27,7 @@
   text-align: left;
   align-items: flex-start;
   list-style-position: inside;
+  padding-left: 0;
 }
 
 .Spaces> :not([hidden])~ :not([hidden]) {
@@ -36,19 +37,6 @@
 }
 
 /* 'mb-4 inline-flex items-center justify-center text-black text-base' */
-
-.Feature {
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: center;
-  color: #000000;
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.Italic {
-  font-style: italic;
-}
 
 .MarginLeft {
   margin-left: 8px;

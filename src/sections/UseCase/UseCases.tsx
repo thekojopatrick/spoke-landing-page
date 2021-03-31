@@ -20,9 +20,9 @@ const SquareIcon: CSS.Properties = {
 
 export default function UseCases() {
 	return (
-		<section className='text-gray-600 body-font overflow-hidden'>
-			<div className='container px-5 py-24 mx-auto'>
-				<div className='lg:w-4/5 mx-auto flex flex-wrap items-center justify-between'>
+		<section>
+			<div className={[classes.Container,classes.Spaces].join(' ')}>
+				<div className={classes.UseCaseContainer}>
 					<Testimonial
 						personPicture={Person1}
 						personName={'John Doe ~ Big Corp'}
@@ -52,9 +52,8 @@ export default function UseCases() {
 						</li>
 					</UseCase>
 				</div>
-			</div>
-			<div className='container px-5 py-24 mx-auto'>
-				<div className='lg:w-4/5 mx-auto flex flex-wrap items-center justify-between'>
+
+				<div className={classes.UseCaseContainer}>
 					<Testimonial
 						personPicture={Person2}
 						personName={'John Doe ~ Big Corp'}
@@ -78,9 +77,8 @@ export default function UseCases() {
 						</li>
 					</UseCase>
 				</div>
-			</div>
-			<div className='container px-5 py-24 mx-auto'>
-				<div className='lg:w-4/5 mx-auto flex flex-wrap items-center justify-between'>
+
+				<div className={classes.UseCaseContainer}>
 					<Testimonial
 						personPicture={Person3}
 						personName={'John Doe ~ Big Corp'}
