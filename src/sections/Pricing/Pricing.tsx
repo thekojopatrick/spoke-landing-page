@@ -1,5 +1,5 @@
 import PricingCard from './PricingCard/PricingCard';
-import classes from './Pricing.module.css'
+import classes from './Pricing.module.css';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 export default function Pricing() {
@@ -7,33 +7,44 @@ export default function Pricing() {
 		<section className='text-gray-600 body-font overflow-hidden'>
 			<div className={classes.Container}>
 				<div className={classes.Header}>
-					<h1 className={classes.Title}>
-						Plans & Pricing
-					</h1>
+					<h1 className={classes.Title}>Plans & Pricing</h1>
 
 					<div className={classes.ToggleOptionContainer}>
-						<div className={[classes.Flex,classes.JustifyCenter,classes.ItemsCenter].join(' ')}>
-							<p className={classes.PricingOptionText}>
-								Monthly
-							</p>
-							<div className='relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in'>
+						<div
+							className={[
+								classes.Flex,
+								classes.JustifyCenter,
+								classes.ItemsCenter,
+							].join(' ')}
+						>
+							<label className={classes.PricingOptionText}>Monthly</label>
+							<div
+								className={[
+									classes.FormSwitch,
+									classes.InlineBlock,
+									classes.AlignMiddle,
+								].join(' ')}
+							>
 								<input
 									type='checkbox'
-									name='toggle'
-									id='toggle'
-									className='toggle-checkbox absolute block w-6 h-6 rounded-full bg-white p-3 appearance-none cursor-pointer'
+									name='1'
+									id='1'
+									className={classes.FormSwitchCheckbox}
 								/>
-								<label
-									htmlFor='toggle'
-									className='toggle-label block overflow-hidden h-6 rounded-full bg-black cursor-pointer'
-								></label>
+								<label className={classes.FormSwitchLabel} htmlFor='1'></label>
 							</div>
+							<label className={classes.PricingOptionText} htmlFor='1'>
+								Annual
+							</label>
 						</div>
-						<div className={[classes.Flex,classes.JustifyCenter,classes.ItemsCenter].join(' ')}>
-							<p className={classes.PricingOptionText}>Annual</p>
-							<a className={classes.SavedText}>
-								Save 17%
-							</a>
+						<div
+							className={[
+								classes.Flex,
+								classes.JustifyCenter,
+								classes.ItemsCenter,
+							].join(' ')}
+						>
+							<p className={classes.SavedText}>Save 17%</p>
 						</div>
 					</div>
 				</div>

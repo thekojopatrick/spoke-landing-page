@@ -24,6 +24,14 @@
   color: #000000;
 }
 
+.InlineBlock {
+  display: inline-block;
+}
+
+.AlignMiddle {
+  vertical-align: middle;
+}
+
 /* 'sm:text-4xl text-6xl font-bold title-font mb-2 text-gray-900' */
 
 /* 'container px-5 py-24 mx-auto' */
@@ -44,17 +52,18 @@
   display: flex;
   margin: 0 auto;
   overflow: hidden;
+  align-items: center;
   justify-content: center;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 
 .PricingOptionText {
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
-  /* identical to box height, or 200% */
-  text-align: right;
+  text-align: left;
   color: #000000;
+  margin: 0 .5rem;
 }
 
 .SavedText {
@@ -68,4 +77,57 @@
   font-size: 16px;
   line-height: 32px;
   color: #FFC619;
+}
+
+/* CHECKBOX TOGGLE SWITCH */
+
+.FormSwitch {
+  position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 4rem;
+  margin-right: 8px;
+  line-height: 1.5;
+}
+
+.FormSwitchCheckbox {
+  display: none;
+}
+
+.FormSwitchLabel {
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000000;
+  height: 2rem;
+  border-radius: 9999px;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: background-color 0.2s ease-in;
+}
+
+.FormSwitchLabel:before {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 50%;
+  background: #ffffff;
+  width: 2rem;
+  border-radius: 9999px;
+  margin-left: -0.25rem;
+  content: " ";
+  transition: all 0.2s ease-in;
+}
+
+.FormSwitchCheckbox:checked+.FormSwitchLabel, .FormSwitchCheckbox:checked+.FormSwitchLabel:before {}
+
+.FormSwitchCheckbox:checked+.FormSwitchLabel {
+  --tw-shadow: 0 0 #0000;
+  background: #FFC619;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.FormSwitchCheckbox:checked+.FormSwitchLabel:before {
+  right: 0px;
 }
