@@ -3,14 +3,12 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding-top: 16rem;
+  padding-top: 14rem;
 }
 
-/* 'container px-5 py-24 mx-auto'  */
-
 .Container {
-  width: 90%;
-  padding: 4rem 1.5rem;
+  width: 100%;
+  padding: 3rem 1rem;
   padding-bottom: 0rem;
   margin: 1rem auto;
 }
@@ -24,14 +22,9 @@
   align-items: center;
 }
 
-/* 'lg:w-1/3 w-full mb-6 lg:mb-0' */
-
 .HeadlineContainer {
-  width: 33.333333%;
+  width: 100%;
 }
-
-/* 
-ml-24 sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900' */
 
 .HeadlineTitle {
   font-family: 'Caveat';
@@ -43,30 +36,116 @@ ml-24 sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900' */
   color: #FFFFFF;
 }
 
-/* 'lg:w-1/2 w-full leading-relaxed text-gray-100' */
-
 .HeadlineParagraph {
-  width: 50%;
+  width: 100%;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: #FFFFFF;
   margin: 0px 40px;
+  order: -999;
+  text-align: center;
+  display: none;
 }
-
-/* 'bg-white shadow-2xl p-6 rounded-lg lg:h-96' */
 
 .DemoCardContainer {
   width: 100%;
-  /* margin: -1rem; */
 }
-
-/* 'xl:w-full md:w-full p-4 -m-4'  */
 
 .DemoCard {
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  height: 740px;
+  height: 540px;
   background-color: #FFFFFF;
   border-radius: 16px;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+  }
+  .HeadlineContainer {
+    width: 33.333333%;
+  }
+  .HeadlineParagraph {
+    width: 50%;
+    order: 0;
+    text-align: left;
+    display: block;
+  }
+  .DemoCard {
+    height: 740px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+  }
+  .HeadlineContainer {
+    width: 33.333333%;
+  }
+  .HeadlineParagraph {
+    width: 50%;
+    order: 0;
+    text-align: left;
+    display: block;
+  }
+  .DemoCard {
+    height: 740px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Container {
+    max-width: 1024px;
+  }
+  .HeadlineContainer {
+    width: 33.333333%;
+  }
+  .HeadlineParagraph {
+    width: 50%;
+    order: 0;
+    text-align: left;
+    display: block;
+  }
+  .DemoCard {
+    height: 740px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Container {
+    max-width: 1280px;
+  }
+  .HeadlineContainer {
+    width: 33.333333%;
+  }
+  .HeadlineParagraph {
+    width: 50%;
+    order: 0;
+    text-align: left;
+    display: block;
+  }
+  .DemoCard {
+    height: 740px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .Container {
+    max-width: 1536px;
+  }
+  .HeadlineContainer {
+    width: 33.333333%;
+  }
+  .HeadlineParagraph {
+    width: 50%;
+    order: 0;
+    text-align: left;
+    display: block;
+  }
+  .DemoCard {
+    height: 740px;
+  }
 }

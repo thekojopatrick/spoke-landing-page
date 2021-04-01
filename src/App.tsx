@@ -23,7 +23,7 @@ function App() {
       <Pricing/>
       <Security/>
       <BookDemo/>
-      <Footer/>
+      <Footer/> 
     </Layout>
     </div>
   );

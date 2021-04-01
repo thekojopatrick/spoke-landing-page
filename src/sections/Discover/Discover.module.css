@@ -1,6 +1,6 @@
 .Card {
-  width: 192px;
-  height: 80px;
+  width: 6rem;
+  height: 3rem;
   background-color: #F5F5F5;
   border-radius: 8px;
 }
@@ -9,44 +9,132 @@
   text-align: center;
 }
 
-.DiscoverContainer {
-  width: 90%;
-  padding: 4rem 1.5rem;
+.Container {
+  width: 100%;
+  padding: 3rem 1rem;
   margin: 0 auto;
 }
 
-/* 'flex flex-wrap w-full mb-20 flex-col items-center text-center'  */
-
-.DiscoverContentBox {
+.ContentBox {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-}
-
-/* 'flex flex-wrap m-4 space-x-2'  */
-
-.Space> :not([hidden])~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  text-align: center;
+  overflow: hidden;
 }
 
 .Cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .Title {
   font-family: 'Caveat';
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: #000001;
 }
 
-/* 'sm:text-3xl text-2xl font-medium title-font mb-12 text-gray-900' */
+.Display {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+  }
+  .Card {
+    width: 192px;
+    height: 80px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .Cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+  }
+  .Card {
+    width: 192px;
+    height: 80px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .Cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .Container {
+    max-width: 1024px;
+  }
+  .Card {
+    width: 192px;
+    height: 80px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .Cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .Container {
+    max-width: 1280px;
+  }
+  .Card {
+    width: 192px;
+    height: 80px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .Cards {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .Display {
+    display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .Container {
+    max-width: 1536px;
+  }
+  .Card {
+    width: 192px;
+    height: 80px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .Cards {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .Display {
+    display: block;
+  }
+}
