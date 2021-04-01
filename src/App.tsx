@@ -17,9 +17,9 @@ function App() {
       <TryDemo/>
       <DiscoverWhy/>
       <UseCases/>
-      <Security/>
+      {/* <Security/>
       <BookDemo/>
-      <Footer/> 
+      <Footer/>  */}
     </Layout>
     </div>
   );
