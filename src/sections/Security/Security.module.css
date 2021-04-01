@@ -14,40 +14,34 @@
   margin-left: 1rem;
 }
 
-.Security {
-  text-align: center;
-  color: #000000;
-}
 
-/* container mx-auto flex px-5 py-24 items-center justify-center flex-col */
-
-.SecurityContainer {
+.Container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  margin: 3rem auto;
+  text-align: center;
+  color: #000000;
+  overflow: hidden;
 }
 
 .SecurityImage {
   object-fit: cover;
   object-position: center;
-  /* margin-bottom: 3rem; */
 }
-
-/* text-center lg:w-2/3 w-full' */
 
 .SecurityContentBox {
   text-align: center;
+  padding: 2rem;
 }
 
-/* sm:text-4xl text-6xl mb-4 font-bold text-gray-900 leading-loose' */
 
 .Title {
   font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: #000000;
   margin: 24px 0px;
@@ -62,10 +56,106 @@
   margin: 24px 0px;
 }
 
-/* flex justify-center */
-
 .Brand {
   display: inline-flex;
   object-fit: cover;
   object-position: center;
+}
+
+@media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+  }
+  .ColumnLeft {
+    width: 50%;
+  }
+  .ColumnRight {
+    width: 50%;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 1rem 0px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+  }
+  .ColumnLeft {
+    width: 50%;
+  }
+  .ColumnRight {
+    width: 50%;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 1rem 0px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Container {
+    max-width: 1024px;
+  }
+  .ColumnLeft {
+    width: 50%;
+  }
+  .ColumnRight {
+    width: 50%;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 1rem 0px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Container {
+    max-width: 1280px;
+  }
+  .ColumnLeft {
+    width: 50%;
+    padding: 4rem;
+  }
+  .ColumnRight {
+    width: 40%;
+    padding: 48px 64px 64px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .Container {
+    max-width: 1536px;
+  }
+  .ColumnLeft {
+    width: 50%;
+    padding: 4rem;
+  }
+  .ColumnRight {
+    width: 40%;
+    padding: 48px 64px 64px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
 }

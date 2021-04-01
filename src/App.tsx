@@ -12,21 +12,21 @@ import WhySpoke from './sections/WhySpoke/WhySpoke';
 import Pricing from './sections/Pricing/Pricing';
 
 function App() {
-  return (
-    <div className="App">
-    <Layout>
-      <Header/>
-      <TryDemo/>
-      <DiscoverWhy/>
-      <UseCases/>
-      <WhySpoke/>
-      <Pricing/>
-      {/* <Security/>
-      <BookDemo/>
-      <Footer/>  */}
-    </Layout>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Layout>
+				<Header />
+				<TryDemo />
+				<DiscoverWhy />
+				<UseCases />
+				<WhySpoke />
+				<Pricing />
+				<Security />
+				{/* <BookDemo/>
+      <Footer/>   */}
+			</Layout>
+		</div>
+	);
 }
 
 export default App;
