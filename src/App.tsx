@@ -21,9 +21,9 @@ function App() {
       <UseCases/>
       <WhySpoke/>
       <Pricing/>
-      <Security/>
+      {/* <Security/>
       <BookDemo/>
-      <Footer/> 
+      <Footer/>  */}
     </Layout>
     </div>
   );
