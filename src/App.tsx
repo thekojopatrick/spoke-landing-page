@@ -21,7 +21,7 @@ function App() {
       <WhySpoke/>
       <Security/>
       <BookDemo/>
-      <Footer/>
+      <Footer/> 
     </Layout>
     </div>
   );

@@ -1,23 +1,23 @@
 .Container {
   width: 90%;
-  padding: 4rem 1.5rem;
+  padding: 0 .5rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .Italic {
   font-style: italic;
 }
 
-/* 'lg:w-4/5 mx-auto flex flex-wrap items-center justify-between' */
-
 .UseCaseContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 8rem auto;
+  /* height: 48rem; */
 }
-
-/* 'mb-4 inline-flex items-center justify-center text-black text-base' */
 
 .Feature {
   display: inline-flex;
@@ -30,8 +30,8 @@
 
 .Spaces> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - 0));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.5rem * calc(1 - 0));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .SquareIcon {
@@ -41,3 +41,47 @@
   margin-right: 4px;
 }
 
+@media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+  }
+  .UseCaseContainer {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+  }
+  .UseCaseContainer {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Container {
+    max-width: 1024px;
+  }
+  .UseCaseContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Container {
+    max-width: 1280px;
+  }
+  .UseCaseContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1536px) {
+  .Container {
+    max-width: 1536px;
+  }
+  .UseCaseContainer {
+    flex-direction: row;
+  }
+}
