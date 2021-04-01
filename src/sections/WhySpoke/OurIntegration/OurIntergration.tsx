@@ -11,27 +11,25 @@ import Houseparty from '../../../assets/Media/brands/houseparty.png';
 import Whereby from '../../../assets/Media/brands/whereby.png';
 import Gotomeeting from '../../../assets/Media/brands/gotomeeting.png';
 
-import classes from "./OurIntegration.module.css";
+import classes from './OurIntegration.module.css';
 
 export default function OurIntegration() {
 	return (
 		<div>
-			<h1 className={classes.Title}>
-				Our Integration
-			</h1>
+			<h1 className={classes.Title}>Our Integration</h1>
 			<div className={classes.BrandsContainer}>
-				<img src={Zoom} alt='Zoom' />
-				<img src={Hangout} alt='Hangout' />
-				<img src={Skype} alt='Skype' />
-				<img src={Microsoft} alt='Microsoft' />
-				<img src={Cisco} alt='Cisco' />
-				<img src={Whereby} alt='Whereby' />
-				<img src={Coursera} alt='Coursera' />
-				<img src={Gotomeeting} alt='Gotomeeting' />
-				<img src={Houseparty} alt='Houseparty' />
-				<img src={BlueJeans} alt='Bluejeans' />
-				<img src={Discord} alt='Discord' />
-				<img src={Slack} alt='Slack' />
+				<img src={Zoom} alt='Zoom' className={classes.Image} />
+				<img src={Hangout} alt='Hangout' className={classes.Image} />
+				<img src={Skype} alt='Skype' className={classes.Image} />
+				<img src={Microsoft} alt='Microsoft' className={classes.Image} />
+				<img src={Cisco} alt='Cisco' className={classes.Image} />
+				<img src={Whereby} alt='Whereby' className={classes.Image} />
+				<img src={Coursera} alt='Coursera' className={classes.Image} />
+				<img src={Gotomeeting} alt='Gotomeeting' className={classes.Image} />
+				<img src={Houseparty} alt='Houseparty' className={classes.Image} />
+				<img src={BlueJeans} alt='Bluejeans' className={classes.Image} />
+				<img src={Discord} alt='Discord' className={classes.Image} />
+				<img src={Slack} alt='Slack' className={classes.Image} />
 			</div>
 		</div>
 	);

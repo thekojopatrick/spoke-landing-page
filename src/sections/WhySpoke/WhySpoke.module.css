@@ -18,32 +18,27 @@
   margin-bottom: 56px;
 }
 
-/* 'container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-around' */
-
-.WhySpokeContainer {
-  width: 90%;
+.Container {
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1rem;
+  overflow: hidden;
 }
-
-/* lg:w-1/2 md:w-1/2 w-5/6 mb-10 mr-28 md:mb-0' */
 
 .ColumnLeft {
-  width: 50%;
+  width: 100%;
 }
 
-/* 'lg:w-1/2 md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center' */
-
 .ColumnRight {
-  /* max-width: 64rem; */
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 48px 64px 64px;
+  padding: 2rem;
   background: #07DCA9;
   border-radius: 16px;
 }
@@ -52,10 +47,10 @@
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 40px;
+  line-height: 46px;
   color: #000000;
-  margin: 48px 0px;
+  margin: 1rem 0px;
 }
 
 .ContentBox {
@@ -84,7 +79,7 @@
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-/* 'w-full text-black bg-white border-0 py-4 px-6 focus:outline-none hover:bg-gray-50 rounded text-lg' */
+
 
 .SignUpButton {
   width: 100%;
@@ -100,4 +95,107 @@
   margin: 10px 0px;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+  }
+  .ColumnLeft {
+    width: 50%;
+  }
+  .ColumnRight {
+    /* max-width: 64rem; */
+    width: 50%;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 1rem 0px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+    flex-direction: row;
+  }
+  .ColumnLeft {
+    width: 50%;
+  }
+  .ColumnRight {
+    width: 50%;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 1rem 0px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Container {
+    max-width: 1024px;
+    flex-direction: row;
+  }
+  .ColumnLeft {
+    width: 50%;
+  }
+  .ColumnRight {
+    width: 50%;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 1rem 0px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Container {
+    max-width: 1280px;
+    flex-direction: row;
+  }
+  .ColumnLeft {
+    width: 50%;
+    padding: 4rem;
+  }
+  .ColumnRight {
+    width: 40%;
+    padding: 48px 64px 64px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .Container {
+    max-width: 1536px;
+    flex-direction: row;
+  }
+  .ColumnLeft {
+    width: 50%;
+    padding: 4rem;
+  }
+  .ColumnRight {
+    width: 40%;
+    padding: 48px 64px 64px;
+  }
+  .Title {
+    font-size: 56px;
+    line-height: 64px;
+    margin: 48px 0px;
+  }
 }
