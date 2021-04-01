@@ -4,7 +4,8 @@ import classes from './Pricing.module.css';
 /* eslint-disable jsx-a11y/anchor-is-valid */
 export default function Pricing() {
 	return (
-		<section className='text-gray-600 body-font overflow-hidden' id='pricing'>
+	
+		<section id='pricing'>
 			<div className={classes.Container}>
 				<div className={classes.Header}>
 					<h1 className={classes.Title}>Plans & Pricing</h1>
