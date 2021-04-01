@@ -11,7 +11,6 @@ import WhySpoke from './sections/WhySpoke/WhySpoke';
 import Pricing from './sections/Pricing/Pricing';
 
 function App() {
-
 	return (
 		<div className='App'>
 			<Layout>

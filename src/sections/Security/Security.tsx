@@ -6,10 +6,10 @@ import Google from '../../assets/Media/images/google.png';
 
 export default function Security() {
 	return (
-		<section className={classes.Security} id='privacy'>
-			<div className={classes.SecurityContainer}>
-				<img className={classes.SecurityImage} alt='hero' src={Lock} />
-				<div className={classes.SecurityImage}>
+		<section id='privacy'>
+			<div className={classes.Container}>
+				<img className={classes.SecurityImage} alt='lock' src={Lock} />
+				<div className={classes.SecurityContentBox}>
 					<h1 className={classes.Title}>Privacy</h1>
 					<p className={classes.Body}>
 						Encrypted on AWS, or encrypted on Google. We can also set you up{' '}
