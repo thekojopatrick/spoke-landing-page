@@ -11,7 +11,6 @@ import illustration2 from '../../assets/Media/illustrations/RedCard.svg';
 import Person3 from '../../assets/Media/images/person3.png';
 import illustration3 from '../../assets/Media/illustrations/PurpleCard.svg';
 
-
 const SquareRed: CSS.Properties = {
 	backgroundColor: '#FE1B4E',
 };
@@ -26,8 +25,8 @@ const SquareGreen: CSS.Properties = {
 
 export default function UseCases() {
 	return (
-		<section id='use-cases'>
-			<div className={[classes.Container, classes.Spaces].join(' ')}>
+		<section>
+			<div className={[classes.Container].join(' ')}>
 				<div className={classes.UseCaseContainer}>
 					<Testimonial
 						personPicture={Person1}
