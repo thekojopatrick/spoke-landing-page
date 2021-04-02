@@ -13,11 +13,11 @@ import PF from '../../assets/Media/svg/flags/PF.svg';
 import RO from '../../assets/Media/svg/flags/RO.svg';
 import YE from '../../assets/Media/svg/flags/YE.svg';
 
-export default function Footer() {
+function Footer() {
 	return (
 		<footer className={classes.Footer}>
-			<div className={classes.FooterContainer}>
-				<div className={classes.FooterOrderLast}>
+			<div className={classes.Container}>
+				<div className={classes.OrderLast}>
 					<a
 						className={[
 							classes.Flex,
@@ -40,7 +40,7 @@ export default function Footer() {
 							/>
 						</svg>
 					</a>
-					<p className={classes.FooterText}>Our countries :</p>
+					<p className={classes.Text}>Our countries :</p>
 					<div className={classes.FlagsContainer}>
 						<Flag flag={FR} />
 						<Flag flag={US} />
@@ -54,61 +54,59 @@ export default function Footer() {
 						<Flag flag={YE} />
 					</div>
 				</div>
-				<div className={classes.FooterOrderFirst}>
-					<div className={classes.FooterColumns}>
+				<div className={classes.OrderFirst}>
+					<div className={[classes.Columns, classes.OrderLast].join(' ')}>
 						<h2 className={classes.Footnote}>
 							© Spoke 2021 - All rights reserved
 						</h2>
-						<div className='list-none mb-10'>
-							<p className={classes.CompanyDescription}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat.
-							</p>
-						</div>
+						<p className={classes.CompanyDescription}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-					<div className={classes.FooterColumns}>
-						<nav className={classes.FooterNav}>
+					<div className={classes.Columns}>
+						<nav className={classes.Nav}>
 							<li>
-								<a className={classes.FooterNavLinks}>How it works</a>
+								<a className={classes.NavLinks}>How it works</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Our Clients</a>
+								<a className={classes.NavLinks}>Our Clients</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Use Cases</a>
+								<a className={classes.NavLinks}>Use Cases</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Our Integrations</a>
+								<a className={classes.NavLinks}>Our Integrations</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Pricing</a>
+								<a className={classes.NavLinks}>Pricing</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Privacy</a>
+								<a className={classes.NavLinks}>Privacy</a>
 							</li>
 						</nav>
 					</div>
-					<div className={classes.FooterColumns}>
-						<nav className={classes.FooterNav}>
+					<div className={classes.Columns}>
+						<nav className={classes.Nav}>
 							<li>
-								<a className={classes.FooterNavLinks}>Terms & Conditions</a>
+								<a className={classes.NavLinks}>Terms & Conditions</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Support / FAQ</a>
+								<a className={classes.NavLinks}>Support / FAQ</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Contact Us</a>
+								<a className={classes.NavLinks}>Contact Us</a>
 							</li>
 							<li>
-								<p className={classes.FooterNavLinks}></p>
+								<p className={classes.NavLinks}></p>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Signin</a>
+								<a className={classes.NavLinks}>Signin</a>
 							</li>
 							<li>
-								<a className={classes.FooterNavLinks}>Create an account</a>
+								<a className={classes.NavLinks}>Create an account</a>
 							</li>
 						</nav>
 					</div>
@@ -117,3 +115,5 @@ export default function Footer() {
 		</footer>
 	);
 }
+
+export default Footer;
