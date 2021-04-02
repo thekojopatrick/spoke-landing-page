@@ -13,7 +13,7 @@ import PF from '../../assets/Media/svg/flags/PF.svg';
 import RO from '../../assets/Media/svg/flags/RO.svg';
 import YE from '../../assets/Media/svg/flags/YE.svg';
 
- function Footer() {
+function Footer() {
 	return (
 		<footer className={classes.Footer}>
 			<div className={classes.Container}>
@@ -55,18 +55,16 @@ import YE from '../../assets/Media/svg/flags/YE.svg';
 					</div>
 				</div>
 				<div className={classes.OrderFirst}>
-					<div className={[classes.Columns,classes.OrderLast].join(' ')}>
+					<div className={[classes.Columns, classes.OrderLast].join(' ')}>
 						<h2 className={classes.Footnote}>
 							© Spoke 2021 - All rights reserved
 						</h2>
-						<div className='list-none mb-10'>
-							<p className={classes.CompanyDescription}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat.
-							</p>
-						</div>
+						<p className={classes.CompanyDescription}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
 					<div className={classes.Columns}>
 						<nav className={classes.Nav}>
@@ -118,4 +116,4 @@ import YE from '../../assets/Media/svg/flags/YE.svg';
 	);
 }
 
-export default Footer
+export default Footer;
