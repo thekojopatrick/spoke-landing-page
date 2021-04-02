@@ -22,8 +22,8 @@ function App() {
 				<WhySpoke />
 				<Pricing />
 				<Security />
-				{/* <BookDemo/>
-      <Footer/>   */}
+				<BookDemo />
+				<Footer />
 			</Layout>
 		</div>
 	);

@@ -14,71 +14,61 @@
   text-align: center;
 }
 
-.MarginBottom{
-  margin-bottom: 8rem;
-}
-
-.WidthFull {
+.Container {
   width: 100%;
-}
-
-.HeightFull {
-  height: 100%;
-}
-
-/* flex items-center justify-center w-full h-full  */
-
-.BookDemoBackground {
-  width: 100%;
-  height: 840px;
-  background-image: url('../../assets/Media/illustrations/bookdemo-background.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 16rem;
-  /* margin: 16rem auto; */
-}
-
-/* p-4 lg:w-1/2 md:w-full flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col */
-
-.BookDemoContentBox {
-  padding-top: 8rem;
-  width: 90%;
+  height: 640px;
+  padding: 1rem;
+  margin: 0 auto;
   display: flex;
-}
-
-/* w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 */
-
-.BookDemoAvatar {
-  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  margin: 0px 56px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.BookDemoBackground {
+  background-color: rgba(255, 198, 25, 1);
+}
+
+.BookDemoContentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.BookDemoAvatar {
+  width: 100%;
+  height: 8rem;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
 }
 
 .BookDemoParagraphBox {
   flex-grow: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .BookDemoParagraph {
   font-weight: normal;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2rem;
   color: #000000;
 }
 
-/* px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 */
-
 .BookDemoButton {
   padding: 16px 32px;
-  width: 271px;
   height: 64px;
   background: #000000;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #FFFFFF;
   border-radius: 8px;
   margin: 10px 0px;
@@ -86,6 +76,105 @@
   cursor: pointer;
 }
 
-.BookDemoArrows{
- margin-right: 300px;
+.BookDemoArrows {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+    flex-direction: column;
+  }
+  .BookDemoArrows {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+    height: 400px;
+    flex-direction: column;
+  }
+  .BookDemoContentBox {
+    flex-direction: row;
+  }
+  .BookDemoParagraphBox {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+  .BookDemoParagraph {
+    width: 90%;
+  }
+  .BookDemoArrows {
+    width: 40%;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .BookDemoBackground {
+    background-image: url('../../assets/Media/illustrations/bookdemo-background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: transparent;
+  }
+  .Container {
+    max-width: 1024px;
+    height: 560px;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 16rem;
+  }
+  .BookDemoParagraph {
+    width: 80%;
+  }
+  .BookDemoButton {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .BookDemoArrows {
+    width: 45%;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Container {
+    max-width: 1280px;
+    height: 840px;
+    flex-direction: row;
+  }
+  .BookDemoParagraph {
+    width: 80%;
+  }
+  .BookDemoButton {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .BookDemoArrows {
+    width: 25%;
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .Container {
+    max-width: 1536px;
+    height: 840px;
+    flex-direction: column;
+  }
+  .BookDemoParagraph {
+    width: 80%;
+  }
+  .BookDemoButton {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .BookDemoArrows {
+    width: 25%;
+    margin-left: 300px;
+  }
 }
