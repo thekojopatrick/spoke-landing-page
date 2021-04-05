@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	StartTextAnimation(0);
 });
 
-
 window.addEventListener(
 	'scroll',
 	() => {
