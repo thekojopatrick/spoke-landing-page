@@ -1,11 +1,17 @@
-import Hero from './Hero/Hero';
-import { Navbar } from './Navbar/Navbar';
+import React from 'react'
 
-export const Header = () => {
-	return (
-		<header>
-			<Navbar />
-			<Hero/>
-		</header>
-	);
-};
+//Importing components
+import Hero from './Hero/Hero'
+import Navbar from './Navbar/Navbar'
+
+
+function Header() {
+    return (
+        <header>
+            <Navbar />
+            <Hero />
+        </header>
+    )
+}
+
+export default Header

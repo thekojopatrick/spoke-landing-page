@@ -19,13 +19,13 @@
   justify-content: space-center;
 }
 
-.HeroContainer {
+.Container {
   width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: 1rem auto;
   opacity: 0;
-  animation: var(--animate-refresh);
+  animation: Refresh 3s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s forwards;
 }
 
 .LeftHeroBox {
@@ -33,8 +33,8 @@
   text-align: center;
 }
 
-.HeroText {
-  font-family: Source Sans Pro, sans-serif;
+.Title {
+  font-family: var(--font-family-primary);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -44,7 +44,7 @@
   margin-bottom: 2rem;
 }
 
-.HeroParagraph {
+.Body {
   font-weight: normal;
   width: 100%;
   margin: 24px auto;
@@ -92,7 +92,27 @@
   width: 100%;
 }
 
+@media (max-width:320px) {
+  .Title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .Body {
+    width: 100%;
+    margin: 1rem auto;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .CTAButton {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 @media (min-width: 640px) {
+  .Container {
+    max-width: 640px;
+  }
   .Flex {
     flex-direction: row;
   }
@@ -104,21 +124,28 @@
     width: 50%;
     order: 9999;
   }
-  .HeroContainer {
-    max-width: 640px;
+  .Title {
+    font-size: 24px;
+    line-height: 36px;
   }
-  .HeroText {
-    font-size: 56px;
-    line-height: 64px;
+  .Body {
+    width: 85%;
+    margin: 1rem 0;
+    font-size: 13px;
+    line-height: 32px;
+  }
+  .CTAButton {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+  }
   .Flex {
     flex-direction: row;
-  }
-  .HeroContainer {
-    max-width: 768px;
   }
   .LeftHeroBox {
     width: 50%;
@@ -129,14 +156,14 @@
     width: 50%;
     order: 9999;
   }
-  .HeroText {
-    font-size: 32px;
-    line-height: 36px;
+  .Title {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
 @media (min-width: 1024px) {
-  .HeroContainer {
+  .Container {
     max-width: 1024px;
   }
   .LeftHeroBox {
@@ -148,14 +175,18 @@
     width: 50%;
     order: 9999;
   }
-  .HeroText {
+  .Title {
     font-size: 48px;
     line-height: 56px;
+  }
+  .CTAButton {
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 
 @media (min-width: 1280px) {
-  .HeroContainer {
+  .Container {
     max-width: 1280px;
   }
   .LeftHeroBox {
@@ -167,18 +198,18 @@
     width: 50%;
     order: 9999;
   }
-  .HeroText {
+  .Title {
     font-size: 56px;
     line-height: 64px;
   }
-  .HeroParagraph {
+  .Body {
     width: 80%;
     margin: 24px 0px;
   }
 }
 
 @media (min-width: 1536px) {
-  .HeroContainer {
+  .Container {
     max-width: 1536px;
   }
   .LeftHeroBox {
@@ -190,12 +221,23 @@
     width: 50%;
     order: 9999;
   }
-  .HeroText {
+  .Title {
     font-size: 56px;
     line-height: 64px;
   }
-  .HeroParagraph {
+  .Body {
     width: 80%;
     margin: 24px 0px;
+  }
+}
+
+@keyframes Refresh {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

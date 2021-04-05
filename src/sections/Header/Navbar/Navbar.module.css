@@ -164,17 +164,24 @@
     max-width: 640px;
   }
   .HamburgerMenu {
-    display: hidden;
+    display: none;
   }
   .NavLinkGroup {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin: 1rem;
+    margin-left: auto;
   }
   .NavLinks {
     flex-direction: row;
     border-right: 2px solid rgba(238, 238, 238, 1);
     margin-left: auto;
+    display: none;
+  }
+  .NavButtonsGroup {
+    display: flex;
+    flex-direction: row;
   }
   .NavLink {
     margin-right: 1.25rem;
@@ -221,6 +228,9 @@
     display: flex;
     flex-direction: row;
     margin: 0;
+  }
+  .NavLinks {
+    display: flex;
   }
   .NavLink {
     margin-right: 1.25rem;

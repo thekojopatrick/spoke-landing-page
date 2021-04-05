@@ -1,14 +1,14 @@
 .Background {
-  background-image: url('../../assets/Media/illustrations/demo-background.svg');
+  background-image: url('../../assets/landing/illustrations/demo-background.svg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding-top: 14rem;
+  padding-top: 8rem;
 }
 
 .Container {
   width: 100%;
-  padding: 3rem 1rem;
+  padding: 8rem 1rem;
   padding-bottom: 0rem;
   margin: 1rem auto;
 }
@@ -30,8 +30,8 @@
   font-family: 'Caveat';
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -48,6 +48,10 @@
   display: none;
 }
 
+.ArrowIcon {
+  width: 16%;
+}
+
 .DemoCardContainer {
   width: 100%;
 }
@@ -61,6 +65,9 @@
 }
 
 @media (min-width: 640px) {
+  .Background {
+    padding-top: 14rem;
+  }
   .Container {
     max-width: 640px;
   }
@@ -79,6 +86,9 @@
 }
 
 @media (min-width: 768px) {
+  .Background {
+    padding-top: 14rem;
+  }
   .Container {
     max-width: 768px;
   }
@@ -133,8 +143,12 @@
 }
 
 @media (min-width: 1536px) {
+  .Background {
+    padding-top: 14rem;
+  }
   .Container {
     max-width: 1536px;
+    padding: 8rem 1rem;
   }
   .HeadlineContainer {
     width: 33.333333%;
@@ -147,5 +161,9 @@
   }
   .DemoCard {
     height: 740px;
+  }
+  .HeadlineTitle {
+    font-size: 56px;
+    line-height: 64px;
   }
 }

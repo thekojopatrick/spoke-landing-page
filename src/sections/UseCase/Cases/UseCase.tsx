@@ -1,27 +1,36 @@
-import CSS from 'csstype';
-import { ReactNode } from 'react';
+import React from 'react';
+
+
+//Importing classes
 import classes from './UseCase.module.css';
 
-const ButtonColor: CSS.Properties = {
-	backgroundColor: ' #07DCA9',
-};
+//Importing others
+import styled from 'styled-components';
 
-interface IProps {
-	children: ReactNode;
-	title: string;
-	buttonName:string;
+interface ButtonProps {
+	color: string;
 }
 
-export default function UseCase({ title, children,buttonName }: IProps) {
+const Button = styled.button<ButtonProps>`
+	background-color: ${props => props.color};
+`;
+
+
+function UseCase(props: {
+	title: string;
+	children: any;
+	buttonName: string;
+	color: string;
+}) {
 	return (
 		<div className={classes.Container}>
 			<div>
-				<h1 className={classes.Title}>{title}</h1>
+				<h1 className={classes.Title}>{props.title}</h1>
 				<ul className={[classes.FeatureLists, classes.Spaces].join(' ')}>
-					{children}
+					{props.children}
 				</ul>
-				<button style={ButtonColor} className={classes.PrimaryButton}>
-					{buttonName}
+				<Button color={props.color} className={classes.PrimaryButton}>
+					{props.buttonName}
 					<span>
 						<svg
 							width='12'
@@ -36,8 +45,10 @@ export default function UseCase({ title, children,buttonName }: IProps) {
 							/>
 						</svg>
 					</span>
-				</button>
+				</Button>
 			</div>
 		</div>
 	);
 }
+
+export default UseCase;

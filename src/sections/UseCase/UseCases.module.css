@@ -1,7 +1,7 @@
 .Container {
-  width: 90%;
-  padding: 0 .5rem;
-  margin: 0 auto;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 4rem auto;
   overflow: hidden;
 }
 
@@ -15,13 +15,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 8rem auto;
+  margin-bottom: 4rem;
   /* height: 48rem; */
 }
 
 .Feature {
   display: inline-flex;
-  align-items: baseline;
   justify-content: center;
   color: #000000;
   font-size: 16px;
@@ -32,13 +31,6 @@
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - 0));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.SquareIcon {
-  width: 8px;
-  height: 8px;
-  background-color: #07DCA9;
-  margin-right: 4px;
 }
 
 @media (min-width: 640px) {

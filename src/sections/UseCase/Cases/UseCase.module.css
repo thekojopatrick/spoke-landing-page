@@ -1,10 +1,8 @@
-
 .Container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .Title {
   font-weight: bold;
@@ -13,7 +11,6 @@
   color: #000000;
   margin: 8px 0px;
 }
-
 
 .FeatureLists {
   list-style-type: none;
@@ -31,7 +28,6 @@
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-
 .MarginLeft {
   margin-left: 8px;
 }
@@ -39,9 +35,9 @@
 .PrimaryButton {
   height: 64px;
   padding: 16px 32px;
-  color: #fff;
+  color: #ffffff;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -52,11 +48,13 @@
   transition: var(--animate-button);
 }
 
-
+.PrimaryButton:focus {
+  outline: none;
+}
 
 @media (min-width: 640px) {
   .Container {
-    max-width: 50%;
+    max-width: 90%;
   }
   .PrimaryButton {
     font-size: 20px;
@@ -69,8 +67,8 @@
     max-width: 50%;
   }
   .PrimaryButton {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 28px;
   }
 }
 

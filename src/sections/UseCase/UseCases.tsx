@@ -1,29 +1,28 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+//Importing components
 import UseCase from './Cases/UseCase';
 import Testimonial from './Testimonials/Testimonial';
-import CSS from 'csstype';
+import SquareIcon from '../../UI/SquareIcon/SquareIcon';
+
+//Importing classes
 import classes from './UseCases.module.css';
-/* eslint-disable jsx-a11y/anchor-is-valid */
 
-import Person1 from '../../assets/Media/images/person1.png';
-import illustration1 from '../../assets/Media/illustrations/GreenCard.svg';
-import Person2 from '../../assets/Media/images/person2.png';
-import illustration2 from '../../assets/Media/illustrations/RedCard.svg';
-import Person3 from '../../assets/Media/images/person3.png';
-import illustration3 from '../../assets/Media/illustrations/PurpleCard.svg';
+//Importing others
+import Person1 from '../../assets/landing/images/person1.png';
+import illustration1 from '../../assets/landing/illustrations/GreenCard.svg';
+import Person2 from '../../assets/landing/images/person2.png';
+import illustration2 from '../../assets/landing/illustrations/RedCard.svg';
+import Person3 from '../../assets/landing/images/person3.png';
+import illustration3 from '../../assets/landing/illustrations/PurpleCard.svg';
 
-const SquareRed: CSS.Properties = {
-	backgroundColor: '#FE1B4E',
-};
+const colorRed = '#FE1B4E';
+const colorGreen = '#07DCA9';
+const colorPurple = '#9D04FF';
 
-const SquarePurple: CSS.Properties = {
-	backgroundColor: '#9D04FF',
-};
-
-const SquareGreen: CSS.Properties = {
-	backgroundColor: ' #07DCA9',
-};
-
-export default function UseCases() {
+function UseCases() {
+	const { t } = useTranslation();
 	return (
 		<section>
 			<div className={[classes.Container].join(' ')}>
@@ -34,26 +33,27 @@ export default function UseCases() {
 						illustration={illustration1}
 					/>
 					<UseCase
+						color={colorGreen}
 						title={'UX Research / Qualitative research'}
-						buttonName={'Summarize your UX & Qualitative Research'}
+						buttonName={'Cut the fluff. Focus on your conversations'}
 					>
 						<li className={classes.Feature}>
-							<span style={SquareGreen} className={classes.SquareIcon}></span>
-							<p>
-								Gain time: directly mark moments of interest
-								<span className={classes.Italic}>
-									<br />
-									(80% of the information in a video-conference does NOT matter)
-								</span>
-							</p>
+							<SquareIcon color={colorGreen} />
+							{t('Focus on your conversations') +
+								':' +
+								t(' mark moments of interest in one click, live')}
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareGreen} className={classes.SquareIcon}></span>
-							Perfect transcription
+							<SquareIcon color={colorGreen} />
+							{t(
+								'Get a 99% accurate transcript directly when starting your conversation'
+							)}
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareGreen} className={classes.SquareIcon}></span>
-							Never forget anything
+							<SquareIcon color={colorGreen} />
+							{t('Impress your clients easily') +
+								':' +
+								t(' mashup 10 different interviews into one bite-sized video')}
 						</li>
 					</UseCase>
 				</div>
@@ -65,20 +65,23 @@ export default function UseCases() {
 						illustration={illustration2}
 					/>
 					<UseCase
+						color={colorRed}
 						title={'Customer Success'}
-						buttonName={'Summarize your Customer Success'}
+						buttonName={'Store all your user conversations in one click'}
 					>
 						<li className={classes.Feature}>
-							<span style={SquareRed} className={classes.SquareIcon}></span>
-							<p>Playing around with your information</p>
+							<SquareIcon color={colorRed} />
+							{t('Engage your team by forwarding user testimonials in seconds')}
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareRed} className={classes.SquareIcon}></span>
-							Create fun videos
+							<SquareIcon color={colorRed} />
+							{t('Search through hours of recordings with keywords')}
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquareRed} className={classes.SquareIcon}></span>
-							Remix your video-conferences
+							<SquareIcon color={colorRed} />
+							{t(
+								'Edit themed videos regrouping specific feedback for thoughtful dive-ins'
+							)}
 						</li>
 					</UseCase>
 				</div>
@@ -90,26 +93,29 @@ export default function UseCases() {
 						illustration={illustration3}
 					/>
 					<UseCase
+						color={colorPurple}
 						title={'Internal Communication'}
-						buttonName={'Summarize your Internal Communication'}
+						buttonName={'Internal Communication as smooth as butter'}
 					>
 						<li className={classes.Feature}>
-							<span style={SquarePurple} className={classes.SquareIcon}></span>
-							<p>Stop repeating yourself : archive and save it for ever.</p>
+							<SquareIcon color={colorPurple} />
+							{t(
+								'What if you could stop repeating yourself and send watchable meeting minutes instantly?'
+							)}
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquarePurple} className={classes.SquareIcon}></span>
-							Collectif : You’re gonna lose time by editing your videos, but
-							everyone in your company will benefit.
+							<SquareIcon color={colorPurple} />
+							{t(
+								'Store all your conversationnal knowledge in a shared team library'
+							)}
 						</li>
 						<li className={classes.Feature}>
-							<span style={SquarePurple} className={classes.SquareIcon}></span>
-							Cut the bullshit : 80% of the information in a video-conference
-							does NOT matter
-						</li>
-						<li className={classes.Feature}>
-							<span style={SquarePurple} className={classes.SquareIcon}></span>
-							Knowledge: Personal library of all your video-conversations.
+							<SquareIcon color={colorPurple} />
+							{t("Let's be honest") +
+								':' +
+								t(
+									'80% of a meeting does not matter. Have your team focus on their core job by sending meeting by-standers video minutes.'
+								)}
 						</li>
 					</UseCase>
 				</div>
@@ -117,3 +123,5 @@ export default function UseCases() {
 		</section>
 	);
 }
+
+export default UseCases;
