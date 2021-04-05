@@ -67,6 +67,10 @@
   cursor: pointer;
 }
 
+.CardButton:focus {
+  outline: none;
+}
+
 .PlayIcon {
   display: inline-flex;
   align-items: center;
@@ -112,6 +116,28 @@
   }
 }
 
+@media (max-width: 360px) {
+  .Card {
+    max-width: 360px;
+  }
+  .Paragraph {
+    font-size: 10px;
+  }
+  .CardButton {
+    top: 46%;
+    bottom: 50%;
+  }
+  .CardContentContainer {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .CardImageContainer {
+    height: 500px;
+  }
+  .IllustrationContainer {
+    display: none;
+  }
+}
+
 @media (min-width: 640px) {
   .Card {
     max-width: 640px;
@@ -119,7 +145,7 @@
     margin-bottom: 1rem;
   }
   .CardButton {
-    top: 50%;
+    top: 45%;
     bottom: 50%;
   }
   .IllustrationContainer {
@@ -132,6 +158,10 @@
     max-width: 768px;
     height: 600px;
     margin-bottom: 0;
+  }
+  .CardButton {
+    top: 45%;
+    bottom: 50%;
   }
   .Illustration {
     width: 100%;
@@ -148,7 +178,7 @@
     margin-bottom: 0;
   }
   .CardButton {
-    top: 50%;
+    top: 45%;
     bottom: 50%;
   }
   .Illustration {
@@ -182,7 +212,7 @@
     margin-bottom: 0;
   }
   .CardButton {
-    top: 50%;
+    top: 45%;
     bottom: 50%;
   }
   .CardContentContainer {
