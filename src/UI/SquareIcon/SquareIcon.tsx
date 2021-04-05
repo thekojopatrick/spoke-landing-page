@@ -1,19 +1,7 @@
 import React from 'react';
 
 //Importing classes
-import classes from './SquareIcon.module.css'
-
-//Importing others
-import styled from 'styled-components';
-
-
-interface IconProps {
-	color: string;
-}
-
-const Square = styled.button<IconProps>`
-	background-color: ${props => props.color};
-`;
+import classes from './SquareIcon.module.css';
 
 export function SquareIcon(props: { color: string }) {
 	return (
